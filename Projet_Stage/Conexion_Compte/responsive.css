@@ -1,0 +1,41 @@
+@media (max-width : 1410px ){
+
+    .form {
+        width: 45%;
+    }
+}
+
+@media (max-width : 1040px ) {
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media (max-width : 820px ) {
+
+    .container p {
+        font-size: 40px;
+    }
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media (max-width : 740px ) {
+
+
+    .form {
+        width: 75%;
+    }
+}
+
+@media (max-width : 580px ) {
+
+
+    .form {
+        width: 90%;
+    }
+}
+
