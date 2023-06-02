@@ -1,0 +1,113 @@
+
+body{
+    background-color: rgba(0, 255, 255, 0.35);
+    padding: 30px;
+    
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    
+}
+
+   /* products */
+.products{
+    display: flexbox;
+    text-align: center;
+    background-color: rgba(55, 146, 146, 0.712);
+    width: 70%;
+    height: 100cq;
+    padding-left: 5px;
+}
+
+   /* cart list */
+.cart{
+    display: flexbox;
+    text-align: center;
+    background-color: rgba(54, 163, 163, 0.552);
+    width: 30%;
+    height: 100cq;
+    font-size: 20px;
+}
+
+   /* block product */
+.product{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 145, 0.23);
+    color: white;
+    width: 390px;
+    height: max-content;
+    margin-right: 6px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+   font-size: 30px; 
+   border-radius: 10px;
+}
+
+   /* product name */
+.product #p {
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+/* price + button */
+.C{
+    border-top: 1px solid white;
+    padding-top: 15px;
+}
+
+  /* product price */
+.product #prc{
+    padding-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    width: 60%;
+    display: inline;
+    position: relative;
+    bottom: 0px;
+    left: -50px;
+}
+  /* button */
+.product #PA{
+    display: inline;
+}
+
+.product #btn{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 10%;
+    height: 8%; 
+    border-radius: 50%; 
+    border: 0;
+    font-size: 30px;
+}
+
+.product #btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+     /* total */
+.T{
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 20%;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+    /* image */
+img{
+    width: 320px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+

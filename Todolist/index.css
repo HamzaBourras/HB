@@ -1,0 +1,110 @@
+
+body{
+    text-align: center;
+    background-image: url(Windy.png);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+  /* heading */
+h1{
+    font-size: 50px;
+}
+
+
+  /* form */
+
+.D1{
+    background-color: #17b35329;
+    display: flexbox;
+    justify-content: left;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+div input{
+    width: 400px;
+    padding: 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom : 40px;
+    background-color: rgba(245, 222, 179, 0.251);
+    outline: none;
+}
+
+
+
+
+   /* Button */
+div button{
+    width: 120px;
+    height: 45px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(108, 191, 195);
+    color: black;
+    border: 2px solid rgb(151, 66, 66);
+    border-radius: 8px;
+    outline: none;
+}
+
+div button:hover {
+    background-color: black;
+    color: aqua;
+    transition: 0.5s;
+}
+
+
+  /* Div List */
+
+#ADD{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flexbox;
+    padding-top: 10px;
+}
+
+
+
+.hgu{
+    background-color: white;
+    color: black;
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.hgu:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+LI{
+    list-style-type: none;
+    background-color: #4f61c441;
+    height: 60px;
+    position: relative;
+    left: -25px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    
+}
+

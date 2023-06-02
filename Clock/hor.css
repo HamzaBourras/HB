@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-color: black;
+}
+
+.watch{
+    position: relative;
+    margin: 170px auto;
+    width: 402px;
+    height: 402px;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 0 0 150px white;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: black;
+    transform: translate(-50% , -100%);
+}
+
+.hour-hand{
+    width: 6px;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.minute-hand{
+    width: 4px;
+    height: 145px;
+    border-radius: 4px;
+}
+
+.second-hand{
+    width: 2px;
+    height: 160px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.center-cercle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(1, 1, 255);
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50% , -100%);
+}
+
+
+
+h1{
+    font-size: 90px;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+.C1{
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: -20%;
+    right: -190%;
+    transform: rotate(270deg);
+
+}
+
+.C2{
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: -14%;
+    right: -245%;
+    transform: rotate(270deg);
+}
+
+.C3{
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    top: -10%;
+    right: -420%;
+    transform: rotate(270deg);
+}
+
+.D1{
+    position: absolute;
+    top: 8%;
+    left: 71%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D2{
+    position: absolute;
+    top: 24%;
+    left: 87%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D3{
+    position: absolute;
+    top: 45%;
+    left: 94%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D4{
+    position: absolute;
+    bottom: 23%;
+    left: 87%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D5{
+    position: absolute;
+    bottom: 8%;
+    left: 70%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D6{
+    position: absolute;
+    bottom: -7%;
+    right: 45%;
+    transform-origin: bottom;
+    transform: translate(-50% , -100%);
+    font-size: 30px;
+}
+
+.D7{
+    position: absolute;
+    bottom: -2%;
+    right: 68%;
+    transform-origin: bottom;
+    transform: translate(-50% , -100%);
+    font-size: 30px;
+}
+
+.D8{
+    position: absolute;
+    bottom: 24%;
+    right: 87%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D9{
+    position: absolute;
+    top: 55%;
+    right: 92%;
+    transform-origin: bottom;
+    transform: translate(-50% , -100%);
+    font-size: 30px;
+}
+
+.D10{
+    position: absolute;
+    top: 23%;
+    right: 84%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D11{
+    position: absolute;
+    top: 7%;
+    right: 68%;
+    transform-origin: bottom;
+    font-size: 30px;
+}
+
+.D12{
+    position: absolute;
+    top: 10%;
+    right: 41%;
+    transform-origin: bottom;
+    transform: translate(-50% , -100%);
+    font-size: 30px;
+}
+
+
+
+
+
+
+
