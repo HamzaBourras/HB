@@ -1,0 +1,41 @@
+@media screen and (max-width:1430px) {
+    
+    .produits .prod1,.prod2 {
+        flex-wrap: wrap;
+    }
+
+    .produits .achat {
+        flex-basis: 30%;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    
+    .produits .achat {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .produits .prod1,.prod2 {
+        flex-wrap: wrap;
+    }
+
+    .produits .achat {
+        flex-basis: 55%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .nav li{ 
+        padding: 10px 20px;
+    }
+
+    .produits .achat {
+        flex-basis: 70%;
+    }
+
+}
+

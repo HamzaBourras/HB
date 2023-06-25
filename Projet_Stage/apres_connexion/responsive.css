@@ -1,0 +1,36 @@
+@media screen and (max-width:1000px) {
+    .container .glob {
+        flex-wrap: wrap;
+    }
+
+    .glob .voiture,.produit {
+        flex-basis: 70%;
+        justify-content: center;
+    }
+
+    .produit {margin-top: 70px;}
+}
+
+
+@media screen and (max-width: 865px) {
+
+    .first_section {
+        height: 190px;
+    }
+
+    .first_section p {
+        position: absolute;
+        top: 80%;
+        left: 0%;
+        margin-left: 0px;
+    }
+
+    .Div {
+        top: 15%;
+    }
+
+    .glob .voiture,.produit {
+        flex-basis: 85%;
+    }
+    
+}

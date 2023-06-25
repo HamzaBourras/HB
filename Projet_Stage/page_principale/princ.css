@@ -3,7 +3,6 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 
@@ -11,16 +10,31 @@ html,body{
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     float: left;
     scroll-behavior: smooth;
+}
+html{font-size: 10px;}
+
+        /*** variable ***/
+:root{
+    --bagcolorsection1 : #AA8B56;
+    --bagcolorsection : #4E6C50;
+    --bagcolorfooter : #1a2720;
+    --colorfooter : whitesmoke;
+    --paragraphcolor : #E6F5FF;
+    --colorh1 : #2c4c93;
+    --bagcoloraides : #F0EBCE;
+    --bagcolorservices : #E6E2C3;
+    --coloriconesservices : blue;
+    --navbarcolor : white;
 }
 
 
     /********** container **********/
 .container{
     display: flexbox;
-    background-color: #0B2447;
+    background-color: #395144;
     min-width: 100%;
     min-height: 100vh;
 }
@@ -29,9 +43,8 @@ html,body{
 
     /**************************************** section 1 ****************************************/
 .first_section{
-    /* display: flexbox; */
     position: fixed;
-    background-color: rgb(64, 64, 255);
+    background-color: var(--bagcolorsection1);
     height: 100px;
     width: 100%;
     top: 0px;
@@ -46,17 +59,14 @@ html,body{
     visibility: hidden;
 }   
 .nav{
-    color: white;
+    color: var(--navbarcolor);
     position: absolute;
-    height: 50px;
-    width: auto;
     top:32%;
     right: 20%;
-    text-align: center;
 }
 .nav a{
     text-decoration: none;
-    color: white;
+    color: var(--navbarcolor);
     cursor: pointer;
 }
 
@@ -64,32 +74,32 @@ html,body{
     list-style-type: none;
     display: inline;
     padding: 5px 35px;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .nav li:hover{
     color: black;
+    background-color: #7a571a4e;
     border: 2px solid white;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 1px white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px white;
 }
 
    /* menu button */
 .menu {
     visibility: hidden;
-    font-size: 50px;
+    font-size: 6rem;
     position: absolute;
-    right: 3%;
+    right: 0%;
     top: 20%;
+    text-align: end;
+    padding-right: 10px;
+}
+.menu i {
+    font-size: 45px;
 }
    
     /** section de connexion **/
-.connexion {
-    display: flexbox;
-    position: relative;
-    padding: 3% 4%;
-}
-
 .Div {
     position: absolute;
     right: 0.5%;
@@ -98,21 +108,22 @@ html,body{
 
 .conn,.insc {
     padding: 10px 20px;
-    margin: 0px 5px;
-    background-color: #1256b4;
+    margin: 0px 8px;
+    background-color: #644715;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2.2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.5s ease;
   }
   
   .conn:hover, .insc:hover {
-    background-color: #0B2447;
+    background-color: #ffffff00;
     transform: scale(1.1);
+    border: 1px solid white;
   }
   
   .conn:focus, .insc:focus {
@@ -125,100 +136,102 @@ html,body{
     /**************************************** section 2 ****************************************/
 .second_section{
     display: flexbox;
-    position: relative;
-    background-color: #19376D;
+    background-color: var(--bagcolorsection);
     margin: 100px 1% 3% 1%;
-    padding: 3% 4%;
-    width: 98%;
+    padding: 3% 2%;
+}
+
+.second_section .glob {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .second_section .img{
-    display: inline-block;
     width: 40%;
     height: 25%;
 }
 
 .second_section .def{ 
-    display: inline-block;
     width: 50%;
-    position: absolute;
-    top:27%;
-    right: 3%;
-    transform: translate(0%,-50%);
-    font-size: 170%;
-    color: #A5D7E8;
+    font-size: 2.8rem;
+    color: var(--paragraphcolor);
 }
 
 /** Aide **/
 .second_section .aide {
     position: relative;
-    margin-top: 4%;
+    display: flex;
     text-align: center;
+    margin-top: 30px;
 }
 .second_section .aide .ad{
     overflow: hidden;
-    display: inline-block;
-    width: 32%;
-    height: 290px;
-    padding: 1.7% 0.5%;
+    padding: 2% 0.5%;
     margin: 0.5%;
-    font-size: 20px;
-    border-radius: 40%;
-    background-color: #16305d;
-   justify-content: center;
-   text-align: center;
+    font-size: 2rem;
+    border-radius: 15%;
+    background-color: var(--bagcoloraides);
+    text-align: justify;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 31%;
 }
 
 .second_section .aide .ad h3{
-    width: 40%;
     text-align: center;
-    margin-left: 30%;
 }
 .second_section .aide .ad .defn{
-    font-size: 18px;
-    padding-top: 1%;
-    color: #A5D7E8;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 3% 5%;
+    margin: 3% 0px 0px 0px;
+    color: black;
 }
 
 
     /**************************************** Services ****************************************/
 .services_section{
     display: flexbox;
-    position: relative;
-    background-color: #19376D;
+    background-color: var(--bagcolorsection);
     margin: 3% 1%;
     padding:  2% 4%;
-    width: 98%;
     text-align: center;
 }
   /* titre */
 .services_section h1{
     text-align: center;
-    color: #00b9f7;
-    font-size: 60px;
+    color: var(--colorh1);
+    font-size: 6rem;
     margin-bottom: 20px;
 }
 
 .services_section h1 span{
-    font-size: 40px;
+    font-size: 4rem;
 }
 
     /* services */
-.services_section  .serv, .serv{
+.services_section .bloc1,.bloc2 {
+    display: flex;
+}
+.services_section  .serv{
     overflow: hidden;
-    display: inline-block;
-    width: 30%;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.657);
+    background-color: var(--bagcolorservices);
     padding: 1% 0.5%;
     margin: 0.5%;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 2rem;
+    flex-basis: 100%;
 }
 
    /* titre du service */
 .services_section  .titre, .titre{
-    margin-bottom: 3%;
+    margin-bottom: 2%;
+}
+.services_section  .serv .defn {
+    text-align: justify;
+    padding: 0 3%;
+    justify-items:center ;
 }
 .services_section  .serv h3, .serv h3 {
     display: inline;
@@ -226,8 +239,8 @@ html,body{
 }
 
 .services_section  .serv i, .serv i {
-    color: blue;
-    font-size: 25px;
+    color: var(--coloriconesservices);
+    font-size: 2.5rem;
 }
 
 
@@ -235,32 +248,32 @@ html,body{
     /**************************************** A propos de nous section ****************************************/
 .apropos_section {
     display: flexbox;
-    position: relative;
-    background-color: #19376D;
+    background-color: var(--bagcolorsection);
     margin: 3% 1%;
     padding:  2% 3%;
-    width: 98%;
-    height: 470px;
 }
     /* titre */
 .apropos_section h1{
     text-align: center;
-    color: #00b9f7;
-    font-size: 50px;
+    color: var(--colorh1);
+    font-size: 5rem;
+    margin-bottom: 20px;
 }
 
 .apropos_section h1 span{
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .apropos_section .apropo {
     margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .apropos_section .imag {
-    width: 30%;
-    display: inline-block;
+    width: 35%;
 }
 
 .apropos_section .imag img {
@@ -269,13 +282,8 @@ html,body{
 
 .apropos_section .para {
     width: 60%;
-    display: inline-block;
-    position: absolute;
-    top:50%;
-    right: 4%;
-    transform: translate(0%,-25%);
-    font-size: 135%;
-    color: #A5D7E8;
+    font-size: 2.5rem;
+    color: var(--paragraphcolor);
 }
 
    
@@ -284,99 +292,81 @@ html,body{
 
     /**************************************** Footer Section ****************************************/
 .footer {
-    position: relative;
-    display: flexbox;
-    background-color: #081931;
-    height: 500px;
-    color: whitesmoke;
-    margin-top: 5%;
-    padding-top: 4%;
+    background-color: var(--bagcolorfooter);
+    color: var(--colorfooter);
+    margin-top: 4%;
+    padding: 4% 2% 0% 2%;
 }
 
-.footer .logo {
-    position: absolute;
-    top: 10%;
-    left: 3%;
-}
 .footer .logo img {
-    width: 110px;
+    width: 130px;
 }
 
     /* lien et listes */
 .footer .cont {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    width: 60%;
-    height: 40%;
-}
-.footer .lien,.noserv,.nosolu {
-    overflow: hidden;
-    display: inline-block;
-    width: 30%;
-    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .footer h4 {
-    padding-left: 10%;
+    padding-left: 5%;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 2.2rem;
 }
 
 .footer li {
-    list-style-type: none;
+    list-style-type: circle;
     color: rgba(255, 255, 255, 0.524);
-    margin-bottom: 3%;
-    font-size: 17px;
+    margin-bottom: 8px;
+    font-size: 1.9rem;
 }
 .footer li:hover {
     color: white;
+    transform: translateX(7px);
 }
 
 .footer a{
     text-decoration: none;
 }
 .footer a:hover{
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
    /* resaux */
 .resaux {
-    display: inline-block;
-    position: absolute;
-    width: 20%;
-    right: 0;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px ;
+    margin: 0 0px 30px 0px;
 }
 
 .resaux .res {
-    display: inline-block;
-    font-size: 50px;
-    margin: 0 6%;
+    margin: 0px 1.5%;
 }
 
-.resaux .res i {
+.resaux .res img {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    border-radius: 10px;
 }
-.resaux .res i:hover {
-    font-size: 53px;
-}
+
+
 
 .footer hr {
-    position: absolute;
-    top: 87%;
-    left: 15%;
-    right: 20%;
     color: white;
     width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer p{
-    position: absolute;
-    bottom: 5%;
-    right: 40%;
+    padding: 20px 0px;
     color: #A5D7E8;
-    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 

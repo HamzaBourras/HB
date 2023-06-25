@@ -3,11 +3,12 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+
 }
 
+
 .container {
-    background-color: #9ed5fa;
+    background-color: #395144;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -15,12 +16,13 @@
 }
 
 .container p {
+    color: whitesmoke;
     font-size: 11em;
     font-weight: 500;
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 15%;
+    top: 9%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -30,7 +32,7 @@
     left: 50%;
     top: 55%;
     transform: translate(-50%,-50%);
-    background-color: #0f5788;
+    background-color: #4E6C50;
     padding: 30px;
     border-radius: 20px 0px;
     width: 35%;
@@ -46,19 +48,19 @@
     color: red;
 }
 
-.form input {
-    background-color: #4e89b0;
-    color: white;
+.form input,textarea {
+    background-color: #F0EBCE;
+    color: black;
     border: none;
     outline: none;
-    font-size: 4em;
+    font-size: 4.5em;
     padding: 8px 10px;
     width: 80%;
     margin: 10px 0px 15px 0px;
 }
 
 .form input[type="submit"] {
-    background-color: #027e9a;
+    background-color: #c29f63;
     width: 180px;
     margin-top: 45px;
     cursor: pointer;
@@ -67,8 +69,35 @@
 }
 
 .form input[type="submit"]:hover {
-    background-color: #02586b;
+    background-color: #9076499b;
     transition: 0.7s;
-    transform: scale(1.05);
-    border-radius: 9px;
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: 1px solid #F0EBCE;
+}
+.form .mp{
+    position: relative;
+}
+.form i {
+    font-size: 30px;
+    position: absolute;
+    right: 10%;
+    top: 29%;
+    cursor: pointer;
+}
+
+.form textarea {
+    resize: none;
+}
+
+form a{
+    font-size: 4.5em;
+    margin-left: -80%;
+    position:relative;
+    top: 20px;
+    color: blue;
+}
+
+form a:hover {
+    color: rgb(3, 3, 134)
 }

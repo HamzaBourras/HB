@@ -1,4 +1,3 @@
-
 var nav = document.querySelector('.nav1');
 
  function afficher(){
@@ -8,4 +7,3 @@ var nav = document.querySelector('.nav1');
  function supprimer(){
     nav.style.cssText = "visibility: hidden;"
  }
-

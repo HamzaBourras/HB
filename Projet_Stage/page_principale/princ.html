@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principale</title>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="princ.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
+    <div id="acceuil"></div>
     <div class="container">
 
 
             <!-- NavBar -->
-        <section class="first_section" id="acceuil">
-            <div class="logo"><img src="../image/logo.png" alt="non trouvé" width="180px" height="120px"></div>
+        <section class="first_section">
+            <div class="logo"><img src="image/logo.png" alt="non trouvé" width="180px" height="120px"></div>
             <div class="menu" onmouseenter="afficher()"; onmouseleave="supprimer()";><i class="fa-solid fa-bars"></i></div>
             <div class="nav1" onmouseenter="afficher()"; onmouseleave="supprimer()";>
                 <ul>    
-                    <a href="princ.html"><li> Accueil </li></a>
+                    <a href="#acceuil"><li> Accueil </li></a>
                     <a href="#services"><li> Services</li></a>
-                    <a href=""><li> Contact</li></a>
-                    <a href="#aprop"><li style="margin-right: 45px;"> À propos</li></a>
+                    <a href="#aprop"><li> À propos</li></a>
+                    <a href="../Contactez_nous/cont.html"><li> Contact</li></a>
                 </ul>
             </div>
             <div class="nav">
                 <ul>    
-                    <a href="princ.html"><li> Accueil </li></a>
+                    <a href="#acceuil"><li> Accueil </li></a>
                     <a href="#services"><li> Services</li></a>
-                    <a href=""><li> Contact</li></a>
-                    <a href="#aprop"><li style="margin-right: 45px;"> À propos</li></a>
+                    <a href="#aprop"><li> À propos</li></a>
+                    <a href="../Contactez_nous/cont.html" style="margin-right: 45px;"><li> Contact</li></a>
                 </ul>
             </div>
             <div class="Div">
-                <a href="../Conexion_Compte/connecter.html"><button class="conn">Se connecter</button></a>
-                <a href="../Conexion_Compte/sinscrire.html"><button class="insc">S'inscrire</button></a>
+                <a href="../Connexion_Compte/connecter.html"><button class="conn">Se connecter</button></a>
+                <a href="../Connexion_Compte/sinscrire.html"><button class="insc">S'inscrire</button></a>
             </div>
         </section>
 
@@ -45,9 +45,11 @@
             <!-- Definition and image  -->
         <section class="second_section" >
 
-                <div class="img"><img src="../image/acceuil_img.png" alt="non" width="100%" height="100%"></div>
+            <div class="glob">
+                <div class="img"><img src="image/acceuil_img.png" alt="non" width="100%" height="100%"></div>
             <div class="def">
                 <span style="color: #1896c8; font-weight: bold; font-size: 35px;">IDIRTECH</span> est fondée en vue d’offrir au plus grand nombre d’entreprises un système de suivi de flotte performant. IDIRTECH se force de proposer les solutions de géolocalisation les plus compétitives et les plus évolutives en vue de rencontrer tous les besoins professionnels des sociétés au Maroc. IDIRTECH propose des services conformes aux standards internationaux. 
+            </div>
             </div>
 
             <div class="aide">
@@ -61,57 +63,62 @@
                 </div>
                 <div class="ad">
                     <div class="titre"><span> </span><h3>Une équipe de professionnels</h3></div>
+                        
                     <div class="defn">idirtrack est une équipe travaillant au Maroc pour accompagner nos clients et partenaires au quotidien.C'est une équipe de professionnels qui travaillent ensemble afin de fournir des services personnalisés.</div>
+                    <div id="services"></div>
                 </div>
             </div>
-            <div id="services"> </div>
         </section>
 
         
 
             <!-- Services -->
         <section class="services_section">
-                <h1><span>—</span> Services <span>—</span></h1>
             
-                <div class="serv" id="S1">
-                    <div class="titre"><i class="fas fa-route"></i><span> </span><h3>Cartographie</h3></div>
-                    <div class="defn">Visualisation de votre flotte sur carte avec une cartographie respectant l’intégrité territoriale de chaque pays.</div>
+                <h1><span>—</span>Services<span>—</span></h1>
+            
+                <div class="bloc1">
+                    <div class="serv" id="S1">
+                        <div class="titre"><i class="fas fa-route"></i><span> </span><h3>Cartographie</h3></div>
+                        <div class="defn">Visualisation de votre flotte sur carte avec une cartographie respectant l’intégrité territoriale de chaque pays.</div>
+                    </div>
+                    <div class="serv" id="S2">
+                        <div class="titre"><i class="fas fa-hands-helping"></i><span> </span><h3>Service complet</h3></div>
+                        <div class="defn">Tout ce dont vous avez besoin pour une gestion optimale de votre flotte,des offres personnalisées,des installations de qualité mais aussi un support client fiable et toujours a l'écoute.</div>
+                    </div>
+                    <div class="serv" id="S3">
+                        <div class="titre"><i class="fa-solid fa-truck"></i><span> </span><h3>Gestion Des Remorques</h3></div>
+                        <div class="defn">Suivre le mouvement de vos remorques (attachement et détachement). avec chaque véhicule sur votre flotte de bonne qualité et à temps reel... </div>
+                    </div>
                 </div>
-                <div class="serv" id="S2">
-                    <div class="titre"><i class="fas fa-hands-helping"></i><span> </span><h3>Service complet</h3></div>
-                    <div class="defn">Tout ce dont vous avez besoin pour une gestion optimale de votre flotte,des offres personnalisées,des installations de qualité mais aussi un support client fiable et toujours a l'écoute.</div>
-                </div>
-                <div class="serv" id="S3">
-                    <div class="titre"><i class="fa-solid fa-truck"></i><span> </span><h3>Gestion Des Remorques</h3></div>
-                    <div class="defn">Suivre le mouvement de vos remorques (attachement et détachement). avec chaque véhicule sur votre flotte de bonne qualité et à temps reel... </div>
+            
+                <div class="bloc2">
+                    <div class="serv" id="S4">
+                        <div class="titre"><i class="fa-solid fa-gas-pump"></i><span> </span><h3>Contrôle du carburant</h3></div>
+                        <div class="defn">Une solution professionnelle qui vous aide à surveiller la consommation de carburant, à améliorer la consommation de carburant du parc et à réduire les dépenses opérationnelles.</div>
+                    </div>
+                    <div class="serv" id="S5">
+                        <div class="titre"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i><span> </span><h3>Surveillance de la température</h3></div>
+                        <div class="defn">Ayez une solution télématique de réfrigérateur fiable qui vous fournira un système fiable de surveillance, d'analyse des données et d'alerte qui vous aidera à éliminer le risque d'erreur humaine ou de défaillance du système.</div>
+                    </div>
+                    <div class="serv" id="S6">
+                        <div class="titre"><i class="fa-solid fa-location-dot"></i><span> </span><h3>Suivi GPS et données en direct</h3></div>
+                             <div id="aprop"></div>
+                        <div class="defn">Restez informé de tout ce qui se passe au sein de votre flotte grâce à notre plateforme Web ou à nos applications mobiles Android et iOS. Nous avons une solution pour tout le monde - les gestionnaires, les chauffeurs .</div>
+                    </div>
                 </div>
             
 
             
-                <div class="serv" id="S4">
-                    <div class="titre"><i class="fa-solid fa-gas-pump"></i><span> </span><h3>Contrôle du carburant</h3></div>
-                    <div class="defn">Une solution professionnelle qui vous aide à surveiller la consommation de carburant, à améliorer la consommation de carburant du parc et à réduire les dépenses opérationnelles.</div>
-                </div>
-                <div class="serv" id="S5">
-                    <div class="titre"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i><span> </span><h3>Surveillance de la température</h3></div>
-                    <div class="defn">Ayez une solution télématique de réfrigérateur fiable qui vous fournira un système fiable de surveillance, d'analyse des données et d'alerte qui vous aidera à éliminer le risque d'erreur humaine ou de défaillance du système.</div>
-                </div>
-                <div class="serv" id="S6">
-                    <div class="titre"><i class="fa-solid fa-location-dot"></i><span> </span><h3>Suivi GPS et données en direct</h3></div>
-                    <div class="defn">Restez informé de tout ce qui se passe au sein de votre flotte grâce à notre plateforme Web ou à nos applications mobiles Android et iOS. Nous avons une solution pour tout le monde - les gestionnaires, les chauffeurs .</div>
-                </div>
-            
-
-            <div id="aprop"></div>
         </section>
 
 
             <!-- A propos de nous -->
         <section class="apropos_section">
-            <h1><span>—</span> À propos de nous <span>—</span></h1>
+            <h1><span>—</span>À propos de nous<span>—</span></h1>
             <div class="apropo">
                 <div class="imag">
-                    <img src="../image/apropos_img.jpg" alt="non" width="100%">
+                    <img src="image/apropos_img.jpg" alt="non" width="100%">
                 </div>
                 <div class="para">
                     Leader dans le domaine de la géolocalisation par GPS/GPRS, notre société s’engage à vous livrer des solutions clé en main à forte valeur ajoutée. En effet, les outils de gestion de flotte de véhicules destinés aux entreprises sont utiles à plusieurs titres. D’abord, ces solutions permettent une meilleure maîtrise financière. A travers un ensemble de fonctions évolutives, les outils de géolocalisation permettent aux entreprises de réduire considérablement les coûts et de mieux rentabiliser leurs investissements. De plus, les solutions de tracking gps améliorent la sécurité des activités du parc de véhicules et ceci à moindre coût !
@@ -124,16 +131,17 @@
             <!-- Footer -->
         <section class="footer">
             
-                <div class="logo"><img src="../image/2021-09-21.jpg" alt="non"></div>
+                
                 <div class="cont">
+                    <div class="logo"><img src="image/2021-09-21.jpg" alt="non"></div>
                     <div class="lien">
                         <h4>Liens</h4>
                         <ul>
                             <a href="#acceuil"><li> Accueil </li></a>
                             <a href="#services"><li> Services</li></a>
-                            <a href=""><li> Contactez-nous</li></a>
                             <a href="#aprop"><li> À propos de nous</li></a>
-                            <br><br><br>
+                            <a href="../Contactez_nous/cont.html"><li> Contactez-nous</li></a>
+                            
                         </ul>
                     </div>
                     <div class="noserv">
@@ -160,12 +168,12 @@
                         </ul>
                     </div>
                 </div>
-                <hr>
                 <div class="resaux">
-                    <div class="res" id="r1"><i class="fa-brands fa-square-instagram"></i></div>
-                    <div class="res" id="r2"><i class="fa-brands fa-square-facebook"></i></div>
-                    <div class="res" id="r3"><i class="fa-brands fa-square-whatsapp"></i></div>
+                    <div class="res"><a href="https://instagram.com/idirtech?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><img src="image/instagram.png" alt="non"></a></div>
+                    <div class="res"><a href="https://www.linkedin.com/in/hamza-boubakri-195081232" target="_blank"><img src="image/linkedin.png" alt="non"></a></div>
+                    <div class="res"><a href="https://api.whatsapp.com/send?phone=0606222626" target="_blank"><img src="image/whatsap.png" alt="non"></a></div>
                 </div>
+                <hr>
                 <p>© 2021 iDIRtECH All Rights Reserved.</p>
                 
         </section>
