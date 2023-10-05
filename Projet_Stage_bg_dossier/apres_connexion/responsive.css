@@ -1,0 +1,50 @@
+@media screen and (max-width:1000px) {
+    .container {
+        font-size: 4px;
+    }
+
+    .container .glob {
+        flex-wrap: wrap;
+    }
+
+    .glob .voiture,.produit {
+        flex-basis: 70%;
+        justify-content: center;
+    }
+
+    .produit {margin-top: 90px;}
+}
+
+
+@media screen and (max-width: 865px) {
+    .container {
+        font-size: 3px;
+    }
+
+    .container .glob {
+        margin-top: 80px;
+    }
+
+    .first_section {
+        height: 190px;
+    }
+    .first_section .profil {
+        top: 40%;
+    }
+  
+    .first_section p {
+        position: absolute;
+        top: 80%;
+        left: 1%;
+        margin-left: 0px;
+    }
+
+    .Div {
+        top: 26%;
+    }
+
+    .glob .voiture,.produit {
+        flex-basis: 85%;
+    }
+    
+}

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    float: left;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{font-size: 9px;}
+
+body{
+    background-image: url(../bg_image/bg-3.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flexbox;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+
+
+    /**************************************** Nav Bar ****************************************/
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 5, 5);
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    padding-top: 10px;
+}
+
+.nav{
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.nav a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 20px 30px;
+    font-size: 2.4rem;
+    height: 100%;
+}
+
+.nav li:hover{
+    background-color: #94b6ff4c;
+}
+
+.nav1 {
+    display: none;
+}
+
+
+
+/* menu button */
+.menu,.crois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-size: 6rem;
+    text-align: end;
+    padding-right: 10px;
+    color: white;
+}
+.crois{
+    padding-right: 25px;
+    /* padding-bottom: 10px; */
+}
+.crois i {
+    font-size: 50px;
+    cursor: pointer;
+}
+.menu i {
+    font-size: 45px;
+    cursor: pointer;
+}
+
+
+
+
+    /**************************************** Section d'affichage de la position ****************************************/
+.maps {
+    background-color: #94b6ff61;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 20px 2%;
+    position: relative;
+    border: 1px solid black;
+}
+.position {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    /* le titre */
+.maps h1{
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.maps h1::after {
+    content: "";
+    position: absolute;
+    left: 2.2%;
+    top: 70px;
+    width: 180px;
+    height: 2px;
+    background-color: black;
+  }
+
+.position .posi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    padding-top: 70px;
+    margin-right: 15px;
+}
+
+.position .posi input {
+    font-size: 2.8rem;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.668);
+}
+
+.position .posi button {
+    width: 50%;
+    font-size: 2.3rem;
+    padding: 5px 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    background-color: rgba(255, 255, 255, 0.82);
+    border-radius: 8px;
+    
+}
+.position .posi button:hover {
+    transform: scale(1.05)
+}
+    /* carte de la position */
+.position .carte {
+    background-color: rgba(255, 255, 255, 0.66);
+    width: 600px;
+    height: 500px;
+    text-align: center;
+}
+.position .carte iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**************************************** Section d'ajouter les voitures ****************************************/
+.Ajout {
+    background-color: #94b6ff61;
+    margin: auto;
+    padding: 50px 2%;
+    position: relative;
+    text-align: center;
+    height: 600px;
+}
+
+.Ajout h1{
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.Ajout h1::after {
+    content: "";
+    position: absolute;
+    left: 2.2%;
+    top: 100px;
+    width: 170px;
+    height: 2px;
+    background-color: black;
+  }
+
+.Ajout form{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translate(-50%);
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.Ajout form label {
+    font-size: 2.5rem;
+}
+
+.Ajout form input {
+    font-size: 2.5rem;
+    margin: 6px 0px 17px 0px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.668);
+    color: black;
+    border: none;
+}
+
+.Ajout form input[type="submit"] {
+    background-color: rgba(255, 255, 255, 0.82);
+    color: black;
+    width: 45.6%;
+    font-size: 2.5rem;
+    padding: 5px 30px;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.Ajout form input[type="submit"]:hover {
+    transform: scale(1.05);
+}
