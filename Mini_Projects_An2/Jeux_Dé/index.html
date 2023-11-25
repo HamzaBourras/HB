@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux de Dé</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+</head>
+<body>
+        <!-- Audio -->
+        <audio id="son_lance" src="Sons_Boutons/lance.mp3"></audio>
+        <audio id="son_noveau" src="Sons_Boutons/noveau.mp3"></audio>
+        <audio id="son_passe" src="Sons_Boutons/passe.mp3"></audio>
+        <audio id="son_termine" src="Sons_Boutons/termine.mp3"></audio>
+
+    <div class="container">
+        <h1 id="heading">Jeu de Hasard </h1>
+            
+
+        <input type="text" id="score_max" placeholder="SCORE MAX ( supérieur à 1 )">
+        <p id="er"></p>
+        <div class="jeux">
+            <div class="joueur1">
+                <div class="nom_score">
+                    <h2>JOUEUR 1<i class="fa-brands fa-linux" id="Sn1"></i></h2>
+                    <p id="scoreJ1"></p>
+                </div>
+                <div class="De1">
+                    <img src="images/de_n1.png" alt="non">
+                </div>
+    
+                <div class="tempscore">
+                    <button id="tempscoreJ1"></button>
+                </div>
+            </div>
+    
+            <div class="evenments">
+                <div class="noveau">
+                    <button id="Nv"><span><i class="fa-regular fa-file"></i></span>NOUVEAU</button>
+                </div>
+                
+                <div class="lance_passe">
+                    <button id="lance" ><span><i class="fa-solid fa-wand-magic-sparkles"></i></span>LANCE</button>
+                    <button id="passe"><span><i class="fa-solid fa-arrow-right-arrow-left"></i></span>PASSE</button>
+                </div>
+            </div>
+    
+            <div class="joueur2">
+                <div class="nom_score">
+                    <h2>JOUEUR 2<i class="fa-brands fa-linux" id="Sn2"></i></h2>
+                    <p id="scoreJ2"></p>
+                </div>
+                <div class="De2">
+                    <img src="images/de_n1.png" alt="non">
+                </div>
+                <div class="tempscore">
+                    <button id="tempscoreJ2"></button>
+                </div>
+            </div>
+        </div> 
+    </div>   
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>

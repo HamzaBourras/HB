@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 10vh;
+    min-width: 10vw;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../bg_image/bg-6.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+    /*********** first section **************/
+.first_section{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.first_section .profil{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.first_section .profil img {
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+}
+.first_section .profil img:hover{
+    border: 4px solid white;
+    transform: scale(1.05);
+}
+/***** Informations du profil *****/
+.informations_profil {
+    display: none;
+    position: absolute;
+    background-color: rgba(60, 59, 59, 0.9);
+    width: max-content;
+    flex-direction: column;
+    padding: 17px 20px 20px 20px ;
+    z-index: 1;
+}
+.informations_profil label{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.644);
+}
+.informations_profil input {
+    margin-bottom: 20px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    padding: 6px 10px 4px 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.332);
+    color: white;
+}
+.crois {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 25px;
+}
+.crois i {
+    font-size: 28px;
+    cursor: pointer;
+    outline: 2px solid white;
+    width: 30px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+}
+
+    /* phrase bonjour */
+.first_section p {
+    position: absolute;
+    color: white;
+    top: 50%;
+    margin-left: 120px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: 'Diphylleia', serif;
+    background-color: #3c3b3ba7;
+    border-radius: 10px 0px;
+    padding: 5px 10px;
+    width: max-content;
+}
+p span {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Diphylleia', serif;
+}
+
+.Div {
+    position: absolute;
+    right: 1%;
+    top: 25%;
+}
+
+.decon {
+    padding: 10px 20px;
+    margin: 0px 20px;
+    background-color: #3c3b3ba7;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  .decon:hover {
+    background-color: #3c3b3b;
+    border: 1.5px solid white;
+    color: white;
+  }
+  
+  .decon:focus {
+    outline: none;
+  }
+
+
+
+        /******************************* section 2 ********************************/
+.container .glob {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5% 0%;
+    width: 98%;
+    height: max-content;
+    margin: auto;
+}
+
+.glob a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.glob .voiture,.produit {
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 35%;
+    border: 1px solid white;
+}
+.glob .voiture:hover,.glob .produit:hover{
+    border: 3px solid white;
+    transform: scale(1.02);
+}
+
+.glob .voiture img, .produit img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.glob .voiture p ,.produit p {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+
+
+/****** Animation des boutons voitures et produits *******/
+
+ #vt, #pr {
+    display: none;
+    height: 300px;
+    z-index: 200;
+    margin: auto;
+}
+
+@keyframes btnanim {
+    0%{
+        transform: scaleZ(0.5);
+    }
+
+    100%{
+        transform: scale(3.4, 2.87);
+    }
+
+    
+}

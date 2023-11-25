@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Dos </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: lightblue;">
+    <h1 class="h1 display-1 text-center fw-bold">To Dos</h1>
+    <div class="row m-2 mt-4">
+        <div class="col-4">
+            <form>
+                <div class="mb-2">
+                    <label class="form-label">UserId </label><br>
+                    <input type="text" class="form-control" id="userid"><br>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Todo </label><br>
+                    <input class="form-control" type="text" id="todo"><br>
+                </div>
+                <button class="btn btn-primary" id="btn">Add</button><br>
+                <hr>
+                <div class="mb-2">
+                    <label class="form-label" >Todo filter</label><br>
+                    <input class="form-control" type="text" id="todosearch"><br>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" >User Filter</label><br>
+                    <input class="form-control" type="text" id="usersearch"><br>
+                </div>
+            </form>
+        </div>
+    
+        <div class="col-8 pt-2">
+            <table class="table table-hover">
+                <tr>
+                    <th >ID</th>
+                    <th>UserID</th>
+                    <th>Todo</th>
+                    <th>Completed</th>
+                </tr>
+            </table>
+            <tbody id="tbody">
+
+            </tbody>
+        </div>
+    </div>
+    <script src="toDos_api_1.js"></script>
+</body>
+</html>

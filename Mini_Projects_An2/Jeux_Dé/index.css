@@ -1,0 +1,219 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+
+
+*{
+    font-family: Poppins;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(3 105 161);
+}
+
+.container {
+    grid-row: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+}
+#heading{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#score_max{
+    padding: 12px 6px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 4px;
+    width: 40%;
+    
+}
+#er{
+    display: none;
+    font-size: 24px; 
+    font-weight: bold;
+    color: white;
+    padding:10px 30px;
+}
+
+.jeux {
+    position: relative;
+    background-color: white;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px;
+}
+
+    /**** div de chaque joueur ****/
+.joueur1, .joueur2{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+.joueur1 {
+    border-radius: 20px 0px 0px 20px;
+    /* background-color: rgba(128, 128, 128, 0.253); */
+}
+.joueur2 {
+    border-radius: 0px 20px 20px 0px;
+}
+/* le nom et le score du joueur */
+.joueur1 .nom_score, .joueur2 .nom_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joueur1 .nom_score p, .joueur2 .nom_score p {
+    color: rgb(8 145 178);
+    font-size: 40px;
+    position: absolute;
+    top: 22%;
+}
+.nom_score i {
+    margin-left: 10px;
+}
+/* le tempscore du joueur */
+.joueur1 .tempscore button, .joueur2 .tempscore button{
+    /* width: 70px; */
+    padding: 3px 30px;
+    background-color: rgb(8 145 178);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 4px 1px  black;
+    font-size: 20px;
+    
+}
+
+
+    /**** div des événements ****/
+.evenments {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    height: 88%;
+    width: max-content;
+    /* background-color: red; */
+}
+.evenments .noveau button{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+/* div du dé  */
+.De2,.De1 {
+    width: 60px;
+    height: 60px;
+}
+.De2 img, .De1 img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 12%;
+    box-shadow: 5px 5px 3px 1px  rgb(8 145 178);
+}
+/* div de lance et passe */
+.evenments .lance_passe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.evenments .lance_passe button {
+    background-color: inherit;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lance_passe i, .noveau i {
+    margin-right: 10px;
+    color: rgb(34 211 238);
+    
+}
+
+
+@media only screen and (max-width:795px){
+    .jeux {
+        width:80%;
+    }
+}
+
+/* Animation pour le dé */
+@keyframes vibrer {
+    0%{
+        margin-left: 45px;
+    }
+    15%{
+        margin-left: -45px;
+    }
+    30%{
+        margin-left: 45px;
+    }
+    50%{
+        margin-left: -45px;
+    }
+    65%{
+        margin-left: 45px;
+    }
+    80%{
+        margin-left: -45px;
+    }
+    100%{
+        margin-left: 45px;
+    }
+}
+
+.animation {
+    animation: vibrer 0.1s;
+}
+
+/* Animation pour le background des joueur */
+@keyframes actif {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+}
+.actif{
+    animation: actif 0.6s forwards;
+}
+
+
+
+
+

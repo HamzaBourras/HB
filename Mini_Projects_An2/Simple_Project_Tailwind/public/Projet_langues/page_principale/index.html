@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Améliorez vos langues</title>
+    <link rel="stylesheet" href="../../tailwind.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="../../../node_modules/flowbite/dist/css/flowbite.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-white">
+
+        <!-- *****  NavBar  ***** -->
+
+    <nav class="bg-white bg- text-black lg:py-0 py-1 shadow-md lg:flex lg:justify-between lg:items-center relative">
+        <div class="flex justify-between items-center">
+            <span class=" text-3xl font-[Poppins] cursor-pointer">
+                <img class="h-[60px] inline rounded-full mr-3 ml-2" src="https://pedagogie.ac-guadeloupe.fr/sites/default/files/lphilbert/vignette/flag-globe.jpg" alt="">
+                Améliorez vos langues
+            </span>
+            <span class="text-4xl cursor-pointer lg:hidden block mx-3">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="lg:flex lg:items-center z-[4] 
+            lg:z-auto lg:static absolute block bg-white w-full left-0 lg:w-auto
+            lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100  opacity-0
+            transition-all ease-out duration-500">
+            
+                <li class=" text-xl font-bold hover:text-red-600 duration-500 mx-4 my-8 lg:my:0 cursor-default"> 
+                    <a href="#français">Français ?</a>
+                </li>
+            
+            <li class=" text-xl font-bold hover:text-red-600 duration-500 mx-4 my-8 lg:my:0 cursor-default">
+                <a href="#anglais">Anglais ?</a>
+            </li>
+            <li class=" text-xl font-bold hover:text-red-600 duration-500 mx-4 my-8 lg:my:0 cursor-default">
+                <a href="#conseils">Conseils !</a>
+            </li>
+
+            <a href="connecter.html">
+                <button class="bg-white text-black border-2 border-red-700 text-lg font-[Poppins] duration-500 
+                                px-5 py-2 mx-4 mt-3 mb-4  hover:bg-red-700 hover:text-white
+                                lg:my-0 lg:ml-16 rounded-md 
+                                w-[150px]">
+                    Se connecter
+                </button>
+            </a>
+            <a href="sinscrire.html">
+                <button class="bg-red-700 text-white border-2 border-red-700  text-lg font-[Poppins] duration-500 
+                            px-5 py-2 m-4 lg:mr-4 lg:m-0   hover:bg-white hover:text-black
+                            lg:my-0  rounded-md
+                            w-[150px]">
+                S' inscrire
+            </button>
+            </a>
+        </ul>
+
+
+    </nav>
+
+
+        <!-- *****  SLider des citations  ***** -->
+
+    <div id="controls-carousel" class="relative bg-red-500" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-96 overflow-hidden md:h-[500px] text-center z-0">
+             <!-- Item 1 -->
+             <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="text-white text-4xl w-10/12 h-full flex flex-col justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    « L'image la plus exacte de l'esprit français est la langue française elle-même. » <br> <br> <p class="text-3xl">* Marc Fumaroli *</p>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="text-white text-4xl w-10/12 h-full flex flex-col justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    « One language sets you in a corridor for life. Two languages open every door along the way » <br> <br> <p class="text-3xl">* Frank Smith *</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="text-white text-4xl w-10/12 h-full flex flex-col justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    « Croyez en vos rêves et ils se réaliseront peut-être. Croyez en vous et ils se réaliseront sûrement. » <br> <br> <p class="text-3xl">* Martin Luther King *</p>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class=" hidden duration-700 ease-in-out" data-carousel-item="active" >
+                <div class=" text-white text-4xl w-10/12 h-full flex flex-col justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    « Whatever you are, be a good one » <br> <br> <p class="text-3xl"> * Abraham Linoch *</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    
+
+        <!-- *****  Div pour définir la langue française ***** -->
+
+    <div class="shadow-md bg-white flex flex-col p-4 font-[Poppins] mt-5">
+        <h1 id="français"  class="mb-5 mt-2 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">Comment définir la langue <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-700">française</span> ?</h1>
+        <p  class="text-lg  text-gray-600 lg:text-xl dark:text-gray-400">Le français est une langue romane. Sa grammaire et la plus grande partie de son vocabulaire sont issues des formes orales et populaires du latin, telles que l’usage les a transformées depuis l’époque de la Gaule romaine. Les Serments de Strasbourg, qui scellent en 842 l’alliance entre Charles le Chauve et Louis le Germanique, rédigés en langue romane et en langue germanique, sont considérés comme le plus ancien document écrit en français. <br>
+            La langue permet la diffusion des connaissances dans le cadre de l'éducation formelle, mais aussi en dehors des institutions éducatives sous des formes vulgarisées (modes d'emploi, recettes, etc.). La langue est importante, même lorsqu'elle n'est pas le premier moyen d'expression.
+            <br>Le français est ainsi langue officielle ou co-officielle dans 29 pays
+
+Il est seule langue officielle dans 13 pays, tous membres de l’Organisation internationale de la Francophonie :
+
+en Europe : France et Monaco 
+en Afrique : Bénin, Burkina Faso, République démocratique du Congo (RDC), Congo, Côte d’Ivoire, Gabon, Guinée, Mali, Niger, Sénégal et Togo
+Il est une des langues officielles de 16 autres pays, également tous membres de l’OIF :
+
+en Europe : Belgique, Luxembourg et Suisse 
+en Afrique : Burundi, Cameroun, Comores, Djibouti, Guinée équatoriale, Madagascar, République centrafricaine, Rwanda, Seychelles et Tchad 
+en Amérique : Canada et Haïti 
+en Océanie : Vanuatu
+Le français est aussi une langue présente, sans statut officiel, dans 7 autres pays, où il est parlé par plus de 20% de la population
+
+au Maghreb : Algérie, Maroc, Tunisie
+en Afrique : Mauritanie
+au Moyen-Orient : Liban
+dans l’océan Indien : Maurice
+en Europe : Andorre.</p>
+    </div>
+
+
+        <!-- ***** Div pour définir la langue anglais ***** -->
+    <div class="shadow-md bg-white flex flex-col p-4 font-[Poppins] mt-5" >
+        <h1 id="anglais" class="mb-5 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">How to define the <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-700">English</span> language ?</h1>
+        <p class="text-lg text-gray-600 lg:text-xl dark:text-gray-400">English is a West Germanic language in the Indo-European language family. Originating in early medieval England,[4][5][6] today English is both the most spoken language in the world[7] and the third most spoken native language, after Mandarin Chinese and Spanish.[8] English is the most widely learned second language and is either the official language or one of the official languages in 59 sovereign states. There are more people who have learned English as a second language than there are native speakers. As of 2005, it was estimated that there were over two billion speakers of English.[9]
+
+            <br>English is named after the Angles, one of the ancient Germanic peoples that migrated to the island of Great Britain, and its speakers are called Anglophones. The English language holds a special place in many nations of the world, whether as an official or joint-official language defined by law (such as in India, Ireland, or Canada), or as the sole or dominant language for historical reasons without being explicitly defined by law (such as in the US or UK).[10] It is a co-official language of the United Nations, the European Union, and many other international and regional organisations. English accounts for at least 70% of speakers of the Germanic language branch.
+            <br>The earliest varieties of an English language, collectively known as Old English or "Anglo-Saxon", evolved from a group of North Sea Germanic dialects brought to Britain in the 5th century. Old English dialects were later influenced by Old Norse-speaking Viking settlers and invaders, starting in the 8th and 9th centuries. Middle English began in the late 11th century after the Norman Conquest of England, when considerable Old French, especially Old Norman French, and Latin-derived vocabulary was incorporated into English over some three hundred years.[24][25]
+        </p>
+    </div>
+
+        <!-- ***** Div pour les conseils ***** -->
+    <div class="shadow-md bg-white flex flex-col p-4 font-[Poppins] mt-5">
+        <h1 id="conseils" class="mb-5 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">Comment  <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-400 from-red-700">apprendre </span>une langue ?</h1>
+    </div>
+    
+    
+<script src="../../../node_modules/flowbite/dist/flowbite.js"></script>
+
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[100%]'), list.classList.add('opacity-100')) 
+            : (e.name = "menu",list.classList.remove('top-[100%]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+    
+</body>
+</html>
