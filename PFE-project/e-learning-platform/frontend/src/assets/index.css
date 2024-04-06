@@ -1,0 +1,43 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+  font-family: 'Poppins', sans-serif;
+} */
+/* ---------------------Scroll bar--------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c6c6c;
+  border-radius: 3%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #302020;
+}
+/* ---------------------------------------------------- */
+
+.title {
+  @apply text-lg font-medium text-gray-700;
+}
+
+.h2 {
+  @apply text-2xl font-bold;
+}
+
+nav a.active{
+  border: 1px dashed black;
+  /* background-color: rgba(168, 149, 149, 0.66); */
+}
