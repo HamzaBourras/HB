@@ -166,3 +166,7 @@ Route::prefix("auth/student")->controller(StudentController::class)->middleware(
     Route::get("announcements/index/{student_id}","indexAnnouncement")->where(["student_id" => "[0-9]+"])->name("indexAnnouncement");
 
 });
+
+
+
+Route::get("/indexProfessors", [DirectorController::class,"indexProfessor"])->name("indexProfessor");
