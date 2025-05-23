@@ -1,0 +1,43 @@
+/* Global styles for the Smart Expense Manager application */
+
+body {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f4f4;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.table-view .table-header {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
+
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.alert {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestion_depenses.controllers.MainController">
+    <children>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Smart Expense Manager" styleClass="header"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Add Transaction" onAction="#handleAddTransaction"/>
+                <Button text="View Recommendations" onAction="#handleViewRecommendations"/>
+            </HBox>
+            <TableView fx:id="transactionTable">
+                <columns>
+                    <TableColumn fx:id="amountColumn" text="Amount"/>
+                    <TableColumn fx:id="typeColumn" text="Type"/>
+                    <TableColumn fx:id="categoryColumn" text="Category"/>
+                    <TableColumn fx:id="dateColumn" text="Date"/>
+                    <TableColumn fx:id="commentColumn" text="Comment"/>
+                </columns>
+            </TableView>
+            <ComboBox fx:id="monthComboBox" onAction="#handleFilterByMonth"/>
+            <ComboBox fx:id="categoryComboBox" onAction="#handleFilterByCategory"/>
+            <PieChart fx:id="expensePieChart"/>
+            <BarChart fx:id="monthlyExpenseBarChart"/>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestion_depenses.controllers.TransactionController">
+    <children>
+        <Label text="Ajouter une Transaction" layoutX="14.0" layoutY="14.0"/>
+        
+        <TextField fx:id="amountField" layoutX="14.0" layoutY="50.0" promptText="Montant"/>
+        <ComboBox fx:id="typeComboBox" layoutX="200.0" layoutY="50.0" promptText="Type">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Revenu"/>
+                    <String fx:value="Dépense"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        
+        <ComboBox fx:id="categoryComboBox" layoutX="350.0" layoutY="50.0" promptText="Catégorie">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Loyer"/>
+                    <String fx:value="Nourriture"/>
+                    <String fx:value="Transport"/>
+                    <String fx:value="Autre"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        
+        <DatePicker fx:id="datePicker" layoutX="500.0" layoutY="50.0"/>
+        <!-- <TextField fx:id="commentField" layoutX="650.0" layoutY="50.0" promptText="Commentaire"/> -->
+        
+        <Button text="Ajouter" layoutX="800.0" layoutY="50.0" onAction="#handleAddTransaction"/>
+        
+        <TableView fx:id="transactionTable" layoutX="14.0" layoutY="100.0" prefHeight="300.0" prefWidth="800.0">
+            <columns>
+                <TableColumn text="Montant" fx:id="amountColumn"/>
+                <TableColumn text="Type" fx:id="typeColumn"/>
+                <TableColumn text="Catégorie" fx:id="categoryColumn"/>
+                <TableColumn text="Date" fx:id="dateColumn"/>
+                <TableColumn text="Commentaire" fx:id="commentColumn"/>
+            </columns>
+        </TableView>
+        
+        <Button text="Filtrer" layoutX="14.0" layoutY="420.0" onAction="#handleFilter"/>
+        <ComboBox fx:id="monthComboBox" layoutX="80.0" layoutY="420.0" promptText="Mois"/>
+        <ComboBox fx:id="filterCategoryComboBox" layoutX="200.0" layoutY="420.0" promptText="Catégorie"/>
+    </children>
+</AnchorPane>
